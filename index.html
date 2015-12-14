@@ -1,1 +1,10 @@
-{% extends "layouts/pages.html" %} {% import "macros/context.html" as ctx %} {% block main %} {{ ctx.header('main') }} <main class=container> <h1>Site title</h1> <p>Content goes here!</p> </main> {% include "includes/footer.html" %} {% endblock %} 
+<!doctype html> <html class=no-js> <head> <meta charset=utf-8> <meta name=description> <meta name=viewport content="width=device-width, initial-scale=1"> <title><%= appname %></%=></title>  <link rel=stylesheet href=css/vendor.css> <link rel=stylesheet href=css/main.css> <script src=js/vendor/modernizr.js></script> </head> <body> <!--[if lt IE 10]>
+ <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+ <![endif]--> <header class=bg-primary1> <div class=container> <div class=logo-wrapper> <a href="/"><h1 class=logo><span>Site logo</span></h1></a> <a class="icon-burger nav-trigger hide tablet"><span class=visuallyhidden>Show/hide nav</span></a> </div> <nav id=primary-nav role=navigation> <ul> <li class=current> <a>Prim nav 1</a> </li> <li> <a>Prim nav 2</a> </li> <li> <a>Prim nav 3</a> </li> <li> <a>Prim nav 4</a> </li> <li> <a>Prim nav 5</a> </li> </ul> </nav> </div> </header> <main class=container> <h1>Site title</h1> <p>Content goes here!</p> </main> <footer class=bg-primary2> <div class=container> <nav role=navigation class=footer-nav> <ul> <li> <a>Footer nav 1</a> </li> <li> <a>Footer nav 2</a> </li> <li> <a>Footer nav 3</a> </li> </ul> </nav> </div> </footer>  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script> <script src=js/vendor.js></script> <script src=js/main.js></script> </body> </html> 
